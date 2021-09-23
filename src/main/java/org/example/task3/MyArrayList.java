@@ -54,12 +54,13 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void remove(int position) {
-
+        System.arraycopy(innerArray, position+1, innerArray, position, currentLength - (position + 1));
+        currentLength--;
     }
 
     @Override
     public void update(T newValue, int position) {
-
+        innerArray[position] = newValue;
     }
 
     @Override
