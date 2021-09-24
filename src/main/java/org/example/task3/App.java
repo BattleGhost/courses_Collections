@@ -3,6 +3,12 @@ package org.example.task3;
 public class App {
     public static void main(String[] args) {
         MyList<Integer> myArrayList = new MyArrayList<>();
+        MyList<Integer> myLinkedList = new MyArrayList<>();
+        testLists(myArrayList);
+        testLists(myLinkedList);
+    }
+
+    public static void testLists(MyList<Integer> myArrayList) {
         myArrayList.add(1);
         myArrayList.add(2);
         myArrayList.add(3);
