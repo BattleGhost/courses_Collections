@@ -60,6 +60,9 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void update(T newValue, int position) {
+        if (position >= currentLength) {
+            throw new IndexOutOfBoundsException();
+        }
         innerArray[position] = newValue;
     }
 
