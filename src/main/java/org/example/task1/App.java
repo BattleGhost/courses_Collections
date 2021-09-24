@@ -6,7 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        List<Integer> list = fillList(new ArrayList<Integer>());
+        List<Integer> list = fillList(new ArrayList<>());
         Map<Integer, Integer> map = new TreeMap<>();
         list.forEach(key -> {
             if (map.containsKey(key)) {
